@@ -1,4 +1,6 @@
 package com.pluralsight;
 
-public class Sandwiches {
+public class Receipt {
+
 }
+
