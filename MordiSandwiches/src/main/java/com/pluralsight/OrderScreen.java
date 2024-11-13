@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class OrderScreen {
     private Scanner scanner;
+    private Order order;
 
     public OrderScreen(Scanner scanner) {
         this.scanner = scanner;
+        this.order = new Order();
     }
 
     public void display() {
@@ -29,7 +31,8 @@ public class OrderScreen {
 
             switch (choice) {
                 case "1":
-                    System.out.println("\nSandwich added to order.");
+                    SandwichScreen sandwichScreen = new SandwichScreen(scanner, order);
+                    sandwichScreen.display();
                     break;
                 case "2":
                     System.out.println("\nDrink added to order.");
@@ -37,7 +40,7 @@ public class OrderScreen {
                 case "3":
                     System.out.println("\nChips added to order.");
                     break;
-                case "C":
+                case "4":
                     System.out.println("\nChecking out...");
                     ordering = false;
                     break;
@@ -54,4 +57,3 @@ public class OrderScreen {
         System.out.println("=================================\n");
     }
 }
-

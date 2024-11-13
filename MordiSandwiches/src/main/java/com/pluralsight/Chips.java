@@ -1,14 +1,19 @@
 package com.pluralsight;
 
-public class Chips {
+public class Chips implements Orderable{
     private String type;
+
+    public Chips(String type) {
+        this.type = type;
+    }
 
     public void setType(String type) {
         this.type = type;
     }
 
-    public double calculatePrice() {
-        return 1.0; // Fixed price for chips
+    @Override
+    public double getPrice() {
+        return 1.0;
     }
 
     @Override
