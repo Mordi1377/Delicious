@@ -35,7 +35,8 @@ public class OrderScreen {
                     sandwichScreen.display();
                     break;
                 case "2":
-                    System.out.println("\nDrink added to order.");
+                    DrinkScreen drinkScreen = new DrinkScreen(scanner, order);
+                    drinkScreen.display();
                     break;
                 case "3":
                     System.out.println("\nChips added to order.");

@@ -2,9 +2,11 @@ package com.pluralsight;
 
 public class Drink implements Orderable {
     private String size;
+    private String flavour;
 
-    public void setSize(String size) {
+    public void setSize(String size, String flavour) {
         this.size = size;
+        this.flavour = flavour;
     }
 
     @Override
