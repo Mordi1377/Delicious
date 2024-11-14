@@ -8,6 +8,9 @@ public class Order {
         public void addItem(Orderable item) {
             items.add(item);
         }
+        public List<Orderable> getItems() {
+            return items;
+        }
 
         public double calculateTotalPrice() {
             double total = 0;
@@ -20,7 +23,7 @@ public class Order {
         public void displayOrderSummary() {
             System.out.println("Order Summary:");
             for (Orderable item : items) {
-                System.out.println(item);
+                System.out.println(item + " - $" + item.getPrice());
             }
             System.out.println("Total Price: $" + calculateTotalPrice());
         }

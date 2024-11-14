@@ -7,6 +7,5 @@ public class Main {
         HomeScreen homeScreen = new HomeScreen(scanner);
         homeScreen.display();
         scanner.close();
-
     }
 }

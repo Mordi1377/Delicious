@@ -9,7 +9,7 @@ public class HomeScreen {
     }
 
     public void display() {
-        System.out.println("--------- Welcome to Zaid's Sandwiches! ---------");
+        System.out.println("********* Welcome to Zaid's Sandwiches! *********");
         boolean running = true;
 
         while (running) {
@@ -31,7 +31,7 @@ public class HomeScreen {
             }
         }
 
-        System.out.println("Thank you for visiting!");
+        System.out.println("*****  Thank you for visiting!  ******");
     }
 }
 

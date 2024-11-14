@@ -14,10 +14,10 @@ public class DrinkScreen {
         System.out.println("Select drink size (Small, Medium, Large):");
         String size = scanner.nextLine();
 
-        System.out.println("Select drink flavor (coca, dr. pepper, fanta):");
+        System.out.println("Select drink flavor (coca, dr. pepper, Fanta, dietcoke, lemonade,):");
         String flavor = scanner.nextLine();
 
-        Drink drink = new Drink();
+        Drink drink = new Drink(size, flavor);
 
         order.addItem(drink);
         System.out.println("Drink added to the order.");

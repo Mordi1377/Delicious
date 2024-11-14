@@ -39,22 +39,30 @@ public class OrderScreen {
                     drinkScreen.display();
                     break;
                 case "3":
-                    System.out.println("\nChips added to order.");
+                    ChipsScreen chipsScreen = new ChipsScreen(scanner, order);
+                    chipsScreen.display();
                     break;
                 case "4":
-                    System.out.println("\nChecking out...");
+                    System.out.println("\nYour Order");
+                    order.displayOrderSummary();
                     ordering = false;
+                    CheckoutScreen checkoutScreen = new CheckoutScreen(order, scanner);
+                    checkoutScreen.displayCheckout();
                     break;
                 case "X":
-                    System.out.println("\nOrder canceled.");
-                    ordering = false;
+                    System.out.println("\nConfirm to cancel the order (yes/no)");
+                    String confirmCancel = scanner.nextLine().toLowerCase();
+                    if (confirmCancel.equals("yes")) {
+                        System.out.println("\nOrder canceled");
+                        ordering = false;
+                    }
                     break;
                 default:
                     System.out.println("\nInvalid option, please try again.");
             }
         }
-        System.out.println("\n=================================");
+        System.out.println("\n********************************");
         System.out.println("       Thank you for your order! ");
-        System.out.println("=================================\n");
+        System.out.println("********************************\n");
     }
 }
