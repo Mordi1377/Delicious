@@ -12,24 +12,24 @@ public class SandwichScreen {
 
     public void display() {
         System.out.println("Select bread type (type the number):");
-        System.out.println("1) white\n2) wheat\n3) rye\n4) wrap):");
-        String bread = scanner.nextLine();
-//        int breadChoice = scanner.nextInt();
-//        switch (breadChoice) {
-//            case 1:
-//                bread = "White";
-//                break;
-//            case 2:
-//                bread = "wheat";
-//            case 3:
-//                bread = "rye";
-//            case 4:
-//                bread = "wrap";
-//                break;
-//            default:
-//                System.out.println("Invalid choice. please select a valid number.");
-//        }
-
+        System.out.println("1) white\n2) wheat\n3) rye\n4) wrap");
+        int breadChoice = scanner.nextInt();
+        scanner.nextLine();
+        String bread= null;
+        switch (breadChoice) {
+            case 1:
+                bread = "White";
+                break;
+            case 2:
+                bread = "wheat";
+            case 3:
+                bread = "rye";
+            case 4:
+                bread = "wrap";
+                break;
+            default:
+                System.out.println("Invalid choice. please select a valid number.");
+        }
 
         System.out.println("Select sandwich size (4\", 8\", 12\"):");
         String size = scanner.nextLine();

@@ -44,22 +44,32 @@ public class Sandwich implements Orderable {
 
     @Override
     public double getPrice() {
-        double price = 5.5;
-
-        if (size.equals("8\"")) {
-            price += 1.5;
-        } else if (size.equals("12\"")) {
-            price += 3;
+        double price = switch (size) {
+            case "4\"" -> 5.5;
+            case "8\"" -> 7.0;
+            case "12\"" -> 8.5;
+            default -> 5.5;
+        };
+        switch (size) {
+            case "4\"" -> price += meats.size() * 1.0;
+            case "8\"" -> price += meats.size() * 2.0;
+            case "12\"" -> price += meats.size() * 3.0;
         }
-
-        price += meats.size() * 1.5 + cheeses.size();
-
+        switch (size) {
+            case "4\"" -> price += cheeses.size() * 0.75;
+            case "8\"" -> price += cheeses.size() * 1.5;
+            case "12\"" -> price += cheeses.size() * 2.25;
+        }
         return price;
     }
 
     @Override
     public String toString() {
-        return size + " " + breadType + " Sandwich with " + String.join(", ", meats) + ", " + String.join(", ", cheeses) + ", " + String.join(", ", toppings) + " " +
-                "(Toasted: " + isToasted + ")";
+        String toastedStatus = isToasted ? "(Toasted)" : "";
+        return size + " " + breadType + " Sandwich with " +
+                String.join(", ", meats) + ", " +
+                String.join(", ", cheeses) + ", " +
+                String.join(", ", toppings) +
+                (!toastedStatus.isEmpty() ? " " + toastedStatus : " ");
     }
 }

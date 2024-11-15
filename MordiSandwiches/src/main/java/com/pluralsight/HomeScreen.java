@@ -11,7 +11,6 @@ public class HomeScreen {
     public void display() {
         System.out.println("********* Welcome to Zaid's Sandwiches! *********");
         boolean running = true;
-
         while (running) {
             System.out.println("1) Create New Order");
             System.out.println("X) Exit");
