@@ -57,3 +57,6 @@ Main Menu
 ![Chips_Menu](https://github.com/user-attachments/assets/a288bf12-c631-4424-a78a-72c4bdcd9c07)
 ### Order Summary
 ![Order_Summary](https://github.com/user-attachments/assets/f0688751-722c-4f7f-8226-86ea063cea9a)
+
+## _Favorite Coode_
+![Favorite code](https://github.com/user-attachments/assets/55ab03ef-e359-4a14-afd6-cde093aa0fd6)
