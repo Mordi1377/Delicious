@@ -50,16 +50,18 @@ public class Sandwich implements Orderable {
             case "12\"" -> 8.5;
             default -> 5.5;
         };
-        switch (size) {
+        price += switch (size) {
             case "4\"" -> price += meats.size() * 1.0;
             case "8\"" -> price += meats.size() * 2.0;
             case "12\"" -> price += meats.size() * 3.0;
-        }
-        switch (size) {
+            default -> 0;
+        };
+        price += switch (size) {
             case "4\"" -> price += cheeses.size() * 0.75;
             case "8\"" -> price += cheeses.size() * 1.5;
             case "12\"" -> price += cheeses.size() * 2.25;
-        }
+            default -> 0;
+        };
         return price;
     }
 
