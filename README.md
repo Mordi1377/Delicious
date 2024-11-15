@@ -8,6 +8,8 @@ The Delicious Ordering Application is a command-line interface (CLI) application
 - Order Management: Items added to the order are stored and displayed with pricing and customization details.
 - Exit Options: Users can type "X" to return to the main menu at any point or skip items by choosing "no."
 ## _Project Structure_
+<img width="852" alt="Diagram" src="https://github.com/user-attachments/assets/f81559ff-58f3-4909-9cfe-32da4e5bee0b">
+
 ## _Classes_
 - Main: Entry point of the application, initializes the main menu and directs users to specific order screens.
 - HomeScreen: Main menu where users can select items to order or exit the application.
@@ -44,12 +46,12 @@ Main Menu
 - The total cost of the order is calculated and displayed at the bottom of the order review.
 ## _Screenshoots_
 ### Order Menu
-![order_menu](https://github.com/user-attachments/assets/1a552443-e92d-4f06-b7a6-2918c3d75f2c)
+
 ### Main Menu
+![HomeScreen](https://github.com/user-attachments/assets/2c34cebe-2803-45d9-b946-e43d546ce924)
 
 ![order_menu](https://github.com/user-attachments/assets/c53ba48b-397d-4fa7-8fd5-0715ebbd8d54)
 ### Sandwich Menu
-
 ![SandwichMenu](https://github.com/user-attachments/assets/b300e9f3-c4eb-4aaa-b982-810f530e6693)
 ### Drink Menu
 ![Drink_Menu](https://github.com/user-attachments/assets/0c341660-8f8a-41b1-be6e-c51d1580500b)
@@ -58,5 +60,6 @@ Main Menu
 ### Order Summary
 ![Order_Summary](https://github.com/user-attachments/assets/f0688751-722c-4f7f-8226-86ea063cea9a)
 
-## _Favorite Coode_
+## _Favorite Coode_ _Snippet_
 ![Favorite code](https://github.com/user-attachments/assets/55ab03ef-e359-4a14-afd6-cde093aa0fd6)
+
