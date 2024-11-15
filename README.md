@@ -45,11 +45,11 @@ Main Menu
 - Once items are added, users can select View Order to see all items, each with customization details and prices.
 - The total cost of the order is calculated and displayed at the bottom of the order review.
 ## _Screenshoots_
-### Order Menu
 
 ### Main Menu
 ![HomeScreen](https://github.com/user-attachments/assets/2c34cebe-2803-45d9-b946-e43d546ce924)
 
+### Order Menu
 ![order_menu](https://github.com/user-attachments/assets/c53ba48b-397d-4fa7-8fd5-0715ebbd8d54)
 ### Sandwich Menu
 ![SandwichMenu](https://github.com/user-attachments/assets/b300e9f3-c4eb-4aaa-b982-810f530e6693)
