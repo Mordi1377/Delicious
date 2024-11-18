@@ -4,10 +4,11 @@ import java.util.Scanner;
 public class HomeScreen {
     private Scanner scanner;
 
+    //construct
     public HomeScreen(Scanner scanner) {
         this.scanner = scanner;
     }
-
+    // display method for main menu
     public void display() {
         System.out.println("********* Welcome to Zaid's Sandwiches! *********");
         boolean running = true;

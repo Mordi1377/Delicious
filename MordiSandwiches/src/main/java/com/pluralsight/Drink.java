@@ -4,6 +4,7 @@ public class Drink implements Orderable {
     private String size;
     private String flavor;
 
+    //constructor
     public Drink(String size, String flavor) {
         this.size = size;
         this.flavor = flavor;

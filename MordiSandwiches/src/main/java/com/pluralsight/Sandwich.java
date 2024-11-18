@@ -12,12 +12,13 @@ public class Sandwich implements Orderable {
     private List<String> toppings = new ArrayList<>();
     private List<String> sauces = new ArrayList<>();
 
+    //constructor
     public Sandwich(String size, String breadType, boolean isToasted) {
         this.size = size;
         this.breadType = breadType;
         this.isToasted = isToasted;
     }
-
+    // add meat to sandwich with option for extra
     public void addMeat(String meat, boolean extra) {
         if (extra) {
             meats.add(meat + " (extra)");
@@ -25,7 +26,7 @@ public class Sandwich implements Orderable {
             meats.add(meat);
         }
     }
-
+    // add cheese to sandwich with option for extra
     public void addCheese(String cheese, boolean extra) {
         if (extra) {
             cheeses.add(cheese + " (extra)");
@@ -33,11 +34,11 @@ public class Sandwich implements Orderable {
             cheeses.add(cheese);
         }
     }
-
+    // add topping to sandwich
     public void addTopping(String topping) {
         toppings.add(topping);
     }
-
+    // add sauce to sandwich
     public void addSauce(String sauce) {
         sauces.add(sauce);
     }
